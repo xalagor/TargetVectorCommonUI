@@ -30,10 +30,9 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "User Interface")
 	static void ConvertDistance(EMeasurementFormat InputType, float DistanceIn, EMeasurementFormat &OutputType, float &Distance);
 
-	// Convert Time
-	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "User Interface")
-	static void ConvertTime(int HourIn, int MinuteIn, int SecondIn, ETimePeriod TimePeriodIn, ETimeFormat TimeFormatIn, int &Hour, int& Minute, int& Second, ETimePeriod &TimePeriod, ETimeFormat &TimeFormat);
-
+	        // Convert Time
+	        UFUNCTION(BlueprintCallable, BlueprintPure, Category = "User Interface")
+	        static void ConvertTime(int HourIn, int MinuteIn, int SecondIn, ETimePeriod TimePeriodIn, ETargetVectorTimeFormat TimeFormatIn, int &Hour, int& Minute, int& Second, ETimePeriod &TimePeriod, ETargetVectorTimeFormat &TimeFormat);
 	// Check if Leap Year
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "User Interface")
 	static void IsLeapYear(int Year, bool &IsLeapYear);

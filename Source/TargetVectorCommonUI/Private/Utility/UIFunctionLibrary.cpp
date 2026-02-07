@@ -49,13 +49,12 @@ void UUIFunctionLibrary::ConvertDistance(EMeasurementFormat InputType, float Dis
 	}
 }
 
-void UUIFunctionLibrary::ConvertTime(int HourIn, int MinuteIn, int SecondIn, ETimePeriod TimePeriodIn, ETimeFormat TimeFormatIn, int &Hour, int &Minute, int &Second, ETimePeriod &TimePeriod, ETimeFormat &TimeFormat)
+void UUIFunctionLibrary::ConvertTime(int HourIn, int MinuteIn, int SecondIn, ETimePeriod TimePeriodIn, ETargetVectorTimeFormat TimeFormatIn, int &Hour, int &Minute, int &Second, ETimePeriod &TimePeriod, ETargetVectorTimeFormat &TimeFormat)
 {
-	Hour = HourIn;
-	Minute = MinuteIn;
-	Second = SecondIn;
+        Hour = HourIn;
+        Minute = MinuteIn;
+        Second = SecondIn;
 }
-
 void UUIFunctionLibrary::IsLeapYear(int Year, bool &IsLeapYear)
 {
 	if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))

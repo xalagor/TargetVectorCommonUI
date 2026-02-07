@@ -49,14 +49,13 @@ enum class EHorizontalEnumList : uint8
 };
 
 UENUM(BlueprintType)
-enum class ETimeFormat : uint8
+enum class ETargetVectorTimeFormat : uint8
 {
-	TwelveHour UMETA(DisplayName = "12 Hour"),
-	TwentyFourHour UMETA(DisplayName = "24 Hour"),
-	Count UMETA(Hidden)
+        TwelveHour UMETA(DisplayName = "12 Hour"),
+        TwentyFourHour UMETA(DisplayName = "24 Hour"),
+        Count UMETA(Hidden)
 };
-ENUM_RANGE_BY_COUNT(ETimeFormat, ETimeFormat::Count);
-
+ENUM_RANGE_BY_COUNT(ETargetVectorTimeFormat, ETargetVectorTimeFormat::Count);
 UENUM(BlueprintType)
 enum class ETimePeriod : uint8
 {
